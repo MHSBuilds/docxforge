@@ -1,0 +1,33 @@
+{
+  "name": "Amber",
+  "_comment": "A second brand, to demonstrate that a partial file is enough. Only the keys that differ from Slate are listed; everything else falls back.",
+
+  "strings": {
+    "header_title": "PRODUCT UPDATES",
+    "footer_left": "Northwind Product   •   product@example.com",
+    "contents_title": "In this release",
+    "contents_col_audience": "Who it affects",
+    "coming_soon_title": "Next up"
+  },
+
+  "chrome": {
+    "header_bar_fill": "402A17",
+    "header_rule": "B4762B",
+    "header_meta_color": "EBD9BE",
+    "footer_text_color": "9A8B77"
+  },
+
+  "palette": {
+    "ink": "402A17",
+    "green": "A2661F",
+    "green_light": "C08A3E",
+    "pale": "FBF4E9",
+    "pale2": "FEFBF6",
+    "body": "463A2C",
+    "accent": "1D6F63",
+    "rule": "EADFCB",
+    "muted": "9A8B77"
+  },
+
+  "type": { "masthead_title": 60 }
+}

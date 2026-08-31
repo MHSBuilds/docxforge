@@ -1,0 +1,57 @@
+{
+  "_comment": "Entirely fictional. Northwind is a made-up inventory product used only to demonstrate the shapes the assembler supports: a plain paragraph, a bulleted option list, bold rule paragraphs, image slots, and Coming Soon cards.",
+  "product": "Northwind",
+  "period": "March 2027",
+  "output": "Northwind_Release_March2027.docx",
+
+  "updates": [
+    {
+      "contents_title": "Stock Transfers",
+      "title": "Stock Transfers — Move inventory between warehouses without a support ticket",
+      "audience": "Warehouse and Operations",
+      "body": [
+        {"kind": "para", "text": "Moving stock between warehouses was previously a request to the support desk, which meant the count was wrong until someone picked the ticket up. Warehouse managers can now do it themselves from the stock detail page. The transfer takes effect immediately, both warehouses show the new count, and every move is recorded with who made it and why."},
+        {"kind": "para", "text": "One of the following reasons is recorded against every transfer:"},
+        {"kind": "bullet", "text": "**Rebalancing** — stock is being levelled across sites to match expected demand."},
+        {"kind": "bullet", "text": "**Damage** — the units cannot be sold and are moving to the write-off location."},
+        {"kind": "bullet", "text": "**Customer return** — stock is going back to the site that will restock it."},
+        {"kind": "bullet", "text": "**Supplier recall** — the units are being gathered for return to the supplier."},
+        {"kind": "para", "text": "A reason is required on every transfer. The figures feed the shrinkage report, so the accuracy of that report follows directly from the accuracy of these."},
+        {"kind": "shot", "slot": "update-1a.png", "note": "Stock detail page with the Transfer action"},
+        {"kind": "shot", "slot": "update-1b.png", "note": "Transfer dialog showing the reason list"}
+      ]
+    },
+    {
+      "contents_title": "Purchase Order Approvals",
+      "title": "Purchase Order Approvals — Thresholds and a second approver",
+      "audience": "Procurement and Finance",
+      "body": [
+        {"kind": "para", "text": "Purchase orders now follow an approval threshold set per site rather than going straight to the supplier. Orders under the threshold behave as they always have. Orders over it wait for a second approver, and the person who raised the order can never be that approver."},
+        {"kind": "para", "text": "**The threshold is per site, not global.** Each site sets its own figure in settings, so a large depot and a small branch are not held to the same limit."},
+        {"kind": "para", "text": "**An order over the threshold cannot be split to avoid it.** Two orders to the same supplier on the same day are assessed together against the limit."},
+        {"kind": "shot", "slot": "update-2a.png", "note": "Approval threshold in site settings"}
+      ]
+    },
+    {
+      "contents_title": "Supplier Scorecards",
+      "title": "Supplier Scorecards — On-time delivery and short-shipment rates",
+      "audience": "Procurement",
+      "body": [
+        {"kind": "para", "text": "Every supplier now carries a scorecard built from the last twelve months of receipts: the share of deliveries that arrived on or before the promised date, and the share that arrived short. Both are shown on the supplier record and on the purchase order screen, so the numbers are in front of you at the point of ordering rather than in a report nobody opens."},
+        {"kind": "shot", "slot": "update-3a.png", "note": "Supplier record with the scorecard panel", "width_in": 4.2}
+      ]
+    }
+  ],
+
+  "coming_soon": [
+    {"title": "Cycle Counting", "text": "Schedule recurring partial counts by location and category instead of closing a site for a full stocktake."},
+    {"title": "Barcode Receiving", "text": "Receive a delivery by scanning cartons on a handheld, with mismatches flagged as you go."},
+    {"title": "Supplier Portal", "text": "Let suppliers confirm dates and quantities themselves, so a promised date is agreed rather than assumed."},
+    {"title": "Reorder Suggestions", "text": "Suggest quantities from demand history and current lead times."},
+    {"title": "Landed Cost", "text": "Fold freight, duty and handling into unit cost so margin reflects what stock actually cost."}
+  ],
+
+  "gaps": [
+    "Update 3 does not record how ties are broken when two suppliers score identically"
+  ]
+}

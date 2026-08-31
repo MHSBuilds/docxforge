@@ -1,0 +1,82 @@
+{
+  "name": "Slate (default)",
+  "_comment": "The neutral scheme docxforge ships with. Copy this file, change what you need, pass it as --brand. Every key is optional; anything you leave out falls back to the built-in default. Strings may use {period} and {product}.",
+
+  "strings": {
+    "header_title": "RELEASE NOTES",
+    "footer_left": "Release notes",
+    "contents_title": "Contents",
+    "contents_subtitle": "{period} • Who each update is for",
+    "contents_blurb": "A quick guide to every update in this release and the teams it affects.",
+    "contents_col_number": "#",
+    "contents_col_update": "Update",
+    "contents_col_audience": "Audience",
+    "masthead_title": "{product}",
+    "masthead_subtitle": "{period} • What’s new this cycle",
+    "intro": "The following updates are now live. Here’s what changed, why it matters, and what’s coming next.",
+    "coming_soon_title": "Coming Soon",
+    "coming_soon_empty": "Nothing previewed this cycle.",
+    "output_default": "Release.docx",
+    "needs_input": "[NEEDS INPUT]",
+    "needs_screenshot": "[NEEDS SCREENSHOT]"
+  },
+
+  "chrome": {
+    "_note": "Colours living in the template's own header and footer bars rather than in generated body content.",
+    "header_bar_fill": "1F2A37",
+    "header_rule": "4B5C6B",
+    "header_title_color": "FFFFFF",
+    "header_meta_color": "C9D3DD",
+    "footer_text_color": "8A9198",
+    "footer_rule": "E2E2E2"
+  },
+
+  "palette": {
+    "ink": "1F2A37",
+    "green": "2C6E8F",
+    "green_light": "3E8BB0",
+    "pale": "EDF3F7",
+    "pale2": "F7FAFC",
+    "body": "39434D",
+    "accent": "C2410C",
+    "rule": "DDE5EB",
+    "white": "FFFFFF",
+    "muted": "8A9198"
+  },
+
+  "geometry": {
+    "content_width": 10466,
+    "number_col_width": 560,
+    "contents_num_width": 720,
+    "contents_update_width": 5450,
+    "cs_card_width": 5083,
+    "cs_gutter_width": 300,
+    "max_image_width_emu": 6543040,
+    "max_image_height_emu": 3931920
+  },
+
+  "type": {
+    "contents_title": 56,
+    "contents_title_line": 560,
+    "contents_subtitle": 24,
+    "contents_blurb": 20,
+    "contents_header": 20,
+    "contents_number": 22,
+    "masthead_title": 72,
+    "masthead_subtitle": 26,
+    "masthead_intro": 22,
+    "banner_number": 30,
+    "banner_title": 25,
+    "coming_soon_bar": 28,
+    "coming_soon_card_title": 24,
+    "placeholder": 18,
+    "caption": 17
+  },
+
+  "typography": {
+    "_note": "Used only by docxforge.blank when generating a shell from scratch.",
+    "font": "Calibri",
+    "size": 21,
+    "color": "27322F"
+  }
+}

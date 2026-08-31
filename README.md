@@ -1,2 +1,0 @@
-# docxforge
-Document Creator
